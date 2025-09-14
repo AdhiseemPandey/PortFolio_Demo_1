@@ -1,0 +1,84 @@
+"use client";
+
+import React from 'react';
+import { Award, Coffee, Users, Zap } from 'lucide-react';
+
+const About = () => {
+  const stats = [
+    { icon: Award, label: "Years in Web3", value: "3+" },
+    { icon: Coffee, label: "dApps Built", value: "25+" },
+    { icon: Users, label: "Smart Contracts", value: "50+" },
+    { icon: Zap, label: "Blockchains", value: "8+" }
+  ];
+
+  return (
+    <section id="about" className="py-20 bg-gradient-to-b from-transparent to-slate-800/50 relative z-10">
+      <div className="container mx-auto px-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="space-y-6">
+            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-secondary)] bg-clip-text text-transparent">
+              About Me
+            </h2>
+            
+            <div className="space-y-4 text-gray-300 text-lg leading-relaxed">
+              <p>
+                I'm Adhiseem Pandey, a passionate Web3 developer specializing in blockchain technology and decentralized applications. 
+                My journey into the world of cryptocurrency and DeFi started with curiosity about Bitcoin and has evolved into 
+                expertise in building innovative solutions on the Ethereum ecosystem.
+              </p>
+              
+              <p>
+                With deep knowledge of Solidity, smart contracts, and modern JavaScript frameworks like React and Next.js, 
+                I create secure, scalable, and user-friendly decentralized applications. I'm passionate about DeFi protocols, 
+                NFT marketplaces, and building the future of finance on blockchain technology.
+              </p>
+              
+              <p>
+                When I'm not building dApps, you'll find me researching new blockchain protocols, contributing to Web3 
+                open-source projects, or sharing knowledge with the developer community. I'm always excited to work on 
+                cutting-edge blockchain projects and help shape the decentralized future.
+              </p>
+            </div>
+
+            <div className="flex gap-4">
+              <button className="px-8 py-3 bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-secondary)] text-black font-semibold rounded-full hover:scale-105 transition-transform duration-300">
+                <a href="mailto:adhiseem.atwork@gmail.com" className="text-black">
+                  Contact Me
+                </a>
+              </button>
+              <button className="px-8 py-3 border-2 border-[var(--color-border)] text-white font-semibold rounded-full hover:bg-[var(--color-border)]/10 transition-all duration-300">
+                <a href="https://github.com/AdhiseemPandey" target="_blank" rel="noopener noreferrer" className="text-white">
+                  View GitHub
+                </a>
+              </button>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-2 gap-6">
+            {stats.map((stat, index) => (
+              <div
+                key={stat.label}
+                className="group p-6 bg-slate-800/50 backdrop-blur-sm rounded-2xl border border-gray-700 hover:border-[var(--color-border)] transition-all duration-500 hover:scale-105 text-center"
+                style={{ animationDelay: `${index * 150}ms` }}
+              >
+                <div className="flex justify-center mb-3">
+                  <div className="p-3 bg-[var(--color-primary)]/20 rounded-lg border border-[var(--color-primary)]/30">
+                    <stat.icon className="w-8 h-8 text-[var(--color-primary)]" />
+                  </div>
+                </div>
+                <div className="text-3xl font-bold text-white mb-1 group-hover:text-[var(--color-primary)] transition-colors">
+                  {stat.value}
+                </div>
+                <div className="text-gray-400 text-sm">
+                  {stat.label}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default About;
