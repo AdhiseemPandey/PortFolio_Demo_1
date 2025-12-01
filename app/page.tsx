@@ -1,8 +1,8 @@
 "use client";
 
 import React from 'react';
-import Projects from '@/components/Projects';
+import Skills from '@/components/Skills';
 
-export default function ProjectsPage() {
-  return <Projects />;
+export default function SkillsPage() {
+  return <Skills />;
 }
