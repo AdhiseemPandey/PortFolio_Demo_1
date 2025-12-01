@@ -22,21 +22,25 @@ const About = () => {
             
             <div className="space-y-4 text-gray-300 text-lg leading-relaxed">
               <p>
-                I'm Adhiseem Pandey, a passionate Web3 developer specializing in blockchain technology and decentralized applications. 
-                My journey into the world of cryptocurrency and DeFi started with curiosity about Bitcoin and has evolved into 
-                expertise in building innovative solutions on the Ethereum ecosystem.
+                I'm Adhiseem Pandey, a third-year Electronics and Communication Engineering student at Bhagwan Parshuram Institute of Technology 
+                with a CGPA of 9.108. I'm deeply passionate about Web3 development and have developed expertise in smart contract design, 
+                dApp development, and responsive web applications.
               </p>
               
               <p>
-                With deep knowledge of Solidity, smart contracts, and modern JavaScript frameworks like React and Next.js, 
-                I create secure, scalable, and user-friendly decentralized applications. I'm passionate about DeFi protocols, 
-                NFT marketplaces, and building the future of finance on blockchain technology.
+                I have proficiency in Solidity, Ethereum, Web3.js, Hardhat, Truffle, React.js, Next.js, Node.js, and MongoDB, 
+                with experience in ERC-20/ERC-721 token standards, wallet integration, secure transaction flows, and REST/GraphQL APIs. 
+                My knowledge extends to scalability, layer-2 solutions, and decentralized storage (IPFS, Filecoin).
               </p>
               
               <p>
-                When I'm not building dApps, you'll find me researching new blockchain protocols, contributing to Web3 
-                open-source projects, or sharing knowledge with the developer community. I'm always excited to work on 
-                cutting-edge blockchain projects and help shape the decentralized future.
+                I've demonstrated competitive problem-solving skills through 400+ coding challenges, achieving Codeforces Pupil 
+                (CR 1236, Max 1246) and LeetCode Top 9.77% (Contest Rating 1751). I'm currently a Senior Tech Member at 
+                namespace Community and have practical experience as an intern at JCB India LTD.
+              </p>
+              
+              <p>
+                Also exploring machine learning with hands-on experience in TensorFlow.js and scikit-learn for AI-powered security models and data classification tasks.
               </p>
             </div>
 

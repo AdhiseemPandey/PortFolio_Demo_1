@@ -22,15 +22,30 @@ const Contact = () => {
   };
 
   const contactInfo = [
-    { icon: MapPin, label: "Location", value: "India" },
-    { icon: Phone, label: "Phone", value: "Available on request" },
+    { icon: MapPin, label: "Location", value: "New Delhi, India" },
     { icon: Mail, label: "Email", value: "adhiseem.atwork@gmail.com" }
   ];
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Handle form submission here
+    
+    // Create mailto link with form data
+    const subject = encodeURIComponent(formData.subject);
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+    );
+    const mailtoLink = `mailto:adhiseem.atwork@gmail.com?subject=${subject}&body=${body}`;
+    
+    // Open default email client
+    window.location.href = mailtoLink;
+    
+    // Reset form
+    setFormData({
+      name: '',
+      email: '',
+      subject: '',
+      message: ''
+    });
   };
 
   return (

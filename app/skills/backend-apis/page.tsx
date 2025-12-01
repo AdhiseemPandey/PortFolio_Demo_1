@@ -133,17 +133,6 @@ const BackendAPIsPage = () => {
                         </p>
                       </div>
 
-                      <div className="flex gap-4">
-                        <a
-                          href={tech.documentation}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="flex items-center gap-2 px-4 py-2 bg-[var(--color-secondary)]/20 border border-[var(--color-secondary)]/30 text-[var(--color-secondary)] rounded-lg hover:bg-[var(--color-secondary)]/30 transition-colors duration-300"
-                        >
-                          <BookOpen className="w-4 h-4" />
-                          Documentation
-                        </a>
-                      </div>
                     </div>
 
                     <div className="space-y-6">

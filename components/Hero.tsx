@@ -28,7 +28,9 @@ const Hero = () => {
               View My Work
             </Link>
             <button className="px-8 py-3 border-2 border-[var(--color-border)] text-white font-semibold rounded-full hover:bg-[var(--color-border)]/10 transition-all duration-300">
-              Download CV
+              <a href="/00000_WEB3.pdf" download="Adhiseem_Pandey_Web3_Resume.pdf" className="text-white">
+                Download Resume
+              </a>
             </button>
           </div>
 

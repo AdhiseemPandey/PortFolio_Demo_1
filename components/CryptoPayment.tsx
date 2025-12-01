@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import { Wallet, Bitcoin, Send, CheckCircle, AlertCircle, Loader } from 'lucide-react';
+import { Wallet, Bitcoin, Send, CircleCheck as CheckCircle, CircleAlert as AlertCircle, Loader } from 'lucide-react';
 import { ethers } from 'ethers';
 
 interface PaymentOption {
@@ -29,7 +29,7 @@ const CryptoPayment = () => {
       name: "Ethereum",
       symbol: "ETH",
       network: "Ethereum Mainnet",
-      address: "0x742d35Cc6634C0532925a3b8D28e1D5AC3CE0F5e", // Replace with your ETH address
+      address: "0x80dcddF902C067Eb87eae3dD83b969270f64351a",
       icon: "⟠",
       minAmount: 0.001
     },
@@ -37,7 +37,7 @@ const CryptoPayment = () => {
       name: "Polygon",
       symbol: "MATIC",
       network: "Polygon Network",
-      address: "0x742d35Cc6634C0532925a3b8D28e1D5AC3CE0F5e", // Replace with your MATIC address
+      address: "0x80dcddF902C067Eb87eae3dD83b969270f64351a",
       icon: "⬟",
       minAmount: 1
     },
@@ -45,7 +45,7 @@ const CryptoPayment = () => {
       name: "USD Coin",
       symbol: "USDC",
       network: "Ethereum Mainnet",
-      address: "0x742d35Cc6634C0532925a3b8D28e1D5AC3CE0F5e", // Replace with your USDC address
+      address: "0x80dcddF902C067Eb87eae3dD83b969270f64351a",
       icon: "$",
       minAmount: 1
     },
@@ -53,7 +53,7 @@ const CryptoPayment = () => {
       name: "Solana",
       symbol: "SOL",
       network: "Solana Mainnet",
-      address: "9WzDXwBbmkg8ZTbNMqUxvQRAyrZzDsGYdLVL9zYtAWWM", // Replace with your SOL address
+      address: "8bXn4vcf8aYwTT9zeGrmUmsEur2zs9FM4Hu4mFamr91b",
       icon: "◎",
       minAmount: 0.01
     }

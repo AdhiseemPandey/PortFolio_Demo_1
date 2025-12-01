@@ -41,6 +41,12 @@ const Skills = () => {
       title: "Blockchain Networks",
       skills: ["Ethereum Mainnet", "Polygon", "Arbitrum", "Optimism", "Binance Smart Chain", "Avalanche"],
       color: "var(--color-accent)"
+    },
+    {
+      icon: Zap,
+      title: "GenAI & Machine Learning",
+      skills: ["TensorFlow.js", "Scikit-learn", "OpenAI API", "Random Forest", "TF-IDF", "Data Classification", "AI Security Models"],
+      color: "var(--color-primary)"
     }
   ];
 
