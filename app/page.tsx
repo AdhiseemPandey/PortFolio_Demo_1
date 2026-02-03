@@ -1,8 +1,8 @@
 "use client";
 
 import React from 'react';
-import Skills from '@/components/Skills';
+import Hero from '@/components/Hero';
 
-export default function SkillsPage() {
-  return <Skills />;
+export default function HomePage() {
+  return <Hero />;
 }
