@@ -12,6 +12,8 @@
 /.next/
 /out/
 
+# production
+/build
 
 # misc
 .DS_Store
@@ -26,14 +28,9 @@ yarn-error.log*
 .env
 .env*.local
 
+# vercel
+.vercel
 
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-
-
-# ignore bolt folder
-bolt/
-# ignore git itself
-.git/
-
